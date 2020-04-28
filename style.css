@@ -1,0 +1,144 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------ */
+
+/* Nav section with hero */
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.582), transparent),
+    url(./img/landing-page.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Location section */
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.445), transparent),
+    url(./img/new-york-page.png);
+
+  background-size: auto;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10rem; /*My addition*/
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  /* Optional 
+  text-decoration-thickness: 0.5rem;
+  */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
